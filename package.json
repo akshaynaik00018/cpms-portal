@@ -1,0 +1,14 @@
+{
+  "name": "placement-portal",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "start": "concurrently \"npm:server\" \"npm:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
